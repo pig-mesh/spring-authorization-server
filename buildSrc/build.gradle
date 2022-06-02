@@ -4,9 +4,12 @@ plugins {
 	id "groovy"
 }
 
-sourceCompatibility = JavaVersion.VERSION_11
+sourceCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
+	maven { url "https://maven.aliyun.com/repository/public" }
+	maven { url "https://maven.aliyun.com/repository/spring" }
+	maven { url "https://maven.aliyun.com/repository/spring-plugin" }
 	gradlePluginPortal()
 	mavenCentral()
 	maven { url "https://repo.spring.io/plugins-release/" }

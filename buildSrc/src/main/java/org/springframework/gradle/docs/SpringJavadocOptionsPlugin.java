@@ -31,7 +31,8 @@ public class SpringJavadocOptionsPlugin implements Plugin<Project> {
 			StandardJavadocDocletOptions options = (StandardJavadocDocletOptions) javadoc.getOptions();
 			options.addStringOption("Xdoclint:none", "-quiet");
 			// Workaround for Java 11 javadoc search bug. Can be removed with Java 17.
-			options.addBooleanOption("-no-module-directories", true);
+			// TODO L.cm
+//			options.addBooleanOption("-no-module-directories", true);
 		});
 	}
 }
